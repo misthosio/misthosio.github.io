@@ -98,6 +98,12 @@ header.masthead .stay-informed {
   }
 }
 
+@media (max-width: 768px) {
+  header.masthead {
+    padding-top: 2rem;
+  }
+}
+
 .mb-5, .my-5 {
     margin-bottom: 2rem!important;
 }
@@ -107,7 +113,13 @@ header.masthead .stay-informed {
 }
 
 svg {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  svg {
+    max-width: 50%;
+  }
 }
 
 .showcase .showcase-img {
@@ -169,6 +181,10 @@ svg {
   border-color: #59f7f0;
 }
 
+.btn-group-lg>.btn, .btn-lg {
+  padding: .5rem 0rem;
+}
+
 footer.footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -207,7 +223,7 @@ input				{
   display:block;
   width:300px;
   border:none;
-  border-bottom:1px solid #59f7f0;
+  border-bottom:1px solid #02a2b4;
 }
 input:focus 		{ outline: none !important; }
 
@@ -230,7 +246,7 @@ label 				 {
 /* active state */
 input:focus ~ label, input:valid ~ label 		{
   top:-20px;
-  color:#59f7f0;
+  color:#02a2b4;
   outline: none !important;
 }
 
@@ -238,7 +254,7 @@ input:focus ~ label, input:valid ~ label 		{
 .bar 	{
   position:relative;
   display:block;
-  width:356px;
+  width:100%;
 }
 .bar:before, .bar:after 	{
   content:'';
@@ -246,7 +262,7 @@ input:focus ~ label, input:valid ~ label 		{
   width:0;
   bottom:1px;
   position:absolute;
-  background:#59f7f0;
+  background:#02a2b4;
   transition:0.2s ease all;
   -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
@@ -282,18 +298,25 @@ input:focus ~ .highlight {
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-	from { background:#59f7f0; }
+	from { background:#02a2b4; }
   to 	{ width:0; background:transparent; }
 }
 @-moz-keyframes inputHighlighter {
-	from { background:#59f7f0; }
+	from { background:#02a2b4; }
   to 	{ width:0; background:transparent; }
 }
 @keyframes inputHighlighter {
-	from { background:#59f7f0; }
+	from { background:#02a2b4; }
   to 	{ width:0; background:transparent; }
 }
 
 #inputId:-webkit-autofill {
     background-color: white !important;
+}
+
+@media (max-width: 768px) { /* positions input field and button underneath each other with 100% width for tablet and mobile */
+  .mc-field-group { display: block; max-width: 100%; }
+  #mce-EMAIL { padding: .7em 0 .7em 1em; width: 100%; margin: 0; }
+  .clear { display: block; width: 100% }
+  .button { width: 100%; margin: .5em 0 0 0; }
 }
