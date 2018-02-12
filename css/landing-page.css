@@ -90,10 +90,6 @@ header.masthead .stay-informed {
 }
 
 @media (min-width: 768px) {
-  header.masthead {
-    padding-top: 7rem;
-    height: 100vh;
-  }
   header.masthead h1 {
     font-size: 5.7rem;
   }
@@ -174,8 +170,8 @@ svg {
 }
 
 footer.footer {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* form starting stylings ------------------------------- */

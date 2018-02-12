@@ -1,6 +1,6 @@
 {
-    "name": "Misthos",
-    "short_name": "Misthos",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#222222",
-    "background_color": "#222222",
+    "theme_color": "#02a2b4",
+    "background_color": "#02a2b4",
     "display": "standalone"
 }
