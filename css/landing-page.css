@@ -38,7 +38,7 @@ a:hover {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 996px) {
   .logo {
     width: 70%;
   }
@@ -186,6 +186,11 @@ svg {
 }
 
 /* form starting stylings ------------------------------- */
+
+div#mc_embed_signup {
+    padding-top: 20px !important;
+}
+
 .form-control {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -311,7 +316,7 @@ input:focus ~ .highlight {
 
 @media (max-width: 768px) { /* positions input field and button underneath each other with 100% width for tablet and mobile */
   .mc-field-group { display: block; max-width: 100%; }
-  #mce-EMAIL { padding: .7em 0 .7em 1em; width: 100%; margin: 0; }
+  #mce-EMAIL { padding: .5em 0 .5em 0; width: 100%; margin: 0; }
   .clear { display: block; width: 100% }
   .button { width: 100%; margin: .5em 0 0 0; }
 }
@@ -319,4 +324,12 @@ input:focus ~ .highlight {
 footer.footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+@media (min-width: 996px) {
+  footer.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
