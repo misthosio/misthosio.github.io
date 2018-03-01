@@ -1,6 +1,7 @@
 body {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
   color: #222222;
+  min-height: 100%;
 }
 
 h1 {
@@ -297,13 +298,14 @@ input:focus ~ .highlight {
 footer.footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background-color: #fff !important;
 }
 
 @media (min-width: 996px) {
   footer.footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: #fff !important;
   }
 }
 
@@ -343,7 +345,7 @@ footer.footer {
 
 .btn:hover {
   background-size: 100% 100%;
-  color: #fff;
+  color: #000;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
